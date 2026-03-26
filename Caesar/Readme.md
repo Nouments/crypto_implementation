@@ -14,7 +14,7 @@ Let each byte be represented by a number from 0 to 255.
 
 **Encryption formula (byte-wise):**  
 
-$$ C = (P + k) \mod 256 $$
+$ C = (P + k) \mod 256 $
 
 - `P` = numeric value of the plaintext byte  
 - `k` = key (shift value, 0–255)  
@@ -22,7 +22,7 @@ $$ C = (P + k) \mod 256 $$
 
 **Decryption formula (byte-wise):**  
 
-$$ P = (C - k + 256) \mod 256 $$
+$ P = (C - k + 256) \mod 256 $
 
 - This ensures wrap-around works both for positive overflow and negative subtraction.
 
